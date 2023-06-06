@@ -22,7 +22,7 @@
       ></a-asset-item>
 
       <!-- マーカーの.pattファイルを読み込む -->
-                  <a-marker
+	  <a-marker
                 id="animated-marker"
                 type="pattern"
                 preset="custom"
@@ -31,7 +31,7 @@
                 emitevents="true"
                 cursor="fuse: false; rayOrigin: mouse;"
                 id="markerA"
-            >
+          ><a-entity gltf-model="animated-asset"></a-entity></a-marker>
 
       <!-- カメラを追加 -->
       <a-entity camera></a-entity>
