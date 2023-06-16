@@ -20,15 +20,14 @@
 
       <!-- マーカーの.pattファイルを読み込む -->
       <a-marker type="pattern" url="./assets/marker.patt">
-	  <a-entity gltf-model="#animated-asset"></a-entity>
+	  <a-entity gltf-model="#animated-asset" rotation="-90 0 0"></a-entity>
       </a-marker>
 
       <!-- カメラを追加 -->
-      <a-entity
-		camera
-		rotation = "0 90 0"
-		animation="property: rotation; from: 0 0 0; to: 0 10 0; dur: 4000; easing: linear; loop: true">
-    	</a-entity>
-    </a-scene>
+      <a-entity camera></a-scene>
   </body>
+  <script>
+      //glTFの表示が暗くなる問題に対処
+      document.querySelector("a-scene").renderer.gammaOutput=true;
+  </script>
 </html>
