@@ -8,6 +8,10 @@
     <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
     <!-- AR.js を読み込む -->
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+    <script>
+      <!-- glTFの表示が暗くなる問題に対処 -->
+      document.querySelector("a-scene").renderer.gammaOutput=true;
+    </script>
     <title>上毎WebAR</title>
   </head>
   <body style="margin: 0; overflow: hidden">
@@ -27,11 +31,7 @@
       <a-entity camera></a-entity>
       
       <!-- アニメーションの設定 -->
-      <a-entity animation="property: rotation; to: 0 0 360; easing: linear; loop: true; dur: 10000"></a-entity>
-      </a-scene>
+      <a-entity animation = "property: rotation; to: 0 0 360; dur: 10000; easing: linear; loop: true"></a-entity>
+    </a-scene>
   </body>
-  <script>
-      //glTFの表示が暗くなる問題に対処
-      document.querySelector("a-scene").renderer.gammaOutput=true;
-  </script>
 </html>
