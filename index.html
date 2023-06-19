@@ -21,7 +21,7 @@
       <!-- マーカーの.pattファイルを読み込む -->
       <a-marker type="pattern" url="./assets/marker.patt">
 	  <a-entity gltf-model="#animated-asset"
-		    position="0 0 2"
+		    position="0 0 -2"
 		    animation = "property: rotation; to: 0 360 0; dur: 10000; easing: linear; loop: true"
 		    ></a-entity>
       </a-marker>
@@ -32,5 +32,5 @@
     </a-scene>
   </body>
   <!-- glTFの表示が暗くなる問題に対処 -->
-  <script>document.querySelector("a-scene").renderer.gammaOutput=true;</script>
+  <script>document.querySelector("a-scene").renderer.gammaOutput=True;</script>
 </html>
