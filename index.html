@@ -32,5 +32,7 @@
     </a-scene>
   </body>
   <!-- glTFの表示が暗くなる問題に対処 -->
-  <script>document.querySelector("a-scene").renderer.gammaOutput=True;</script>
+  <script>document.querySelector("a-scene").renderer.gammaInput = true;
+	  document.querySelector("a-scene").renderer.gammaOutput = true;
+	</script>
 </html>
