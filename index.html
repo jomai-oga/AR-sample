@@ -15,7 +15,12 @@
   <body style="margin: 0; overflow: hidden">
 	  
     <!-- A-FrameにAR.jsを紐づけ、VRボタン非表示、深度バッファ追加、glTFの表示が暗くなる問題対処 -->
-    <a-scene embedded arjs="debugUIEnabled: false" sourceType="webcam" vr-mode-ui="enabled: false;" renderer="logarithmicDepthBuffer: true; gammaInput: true; gammaOutput: true;">
+    <a-scene embedded arjs="debugUIEnabled: false"
+	     sourceType="webcam"
+	     vr-mode-ui="enabled: false;"
+	     renderer="logarithmicDepthBuffer: true; gammaInput: true; gammaOutput: true;"
+	     device-orientation-permission-ui="enabled: false"
+	     >
 	    
       <!-- 3DCGモデルを読み込む -->
       <a-asset-item id="animated-asset" src="./assets/asset.glb"></a-asset-item>
