@@ -75,41 +75,40 @@
     <a-asset-item id="animated-asset" src="./assets/asset.glb"></a-asset-item>
     
     <!-- マーカーの.pattファイルを読み込む -->
-    <!-- <a-marker type="pattern" url="./assets/marker.patt"> -->
+    <a-marker type="pattern" url="./assets/marker.patt">
     
-    <!-- 3DCGモデルの呼び出し、スケール、アニメーション設定 -->
-    <!-- 
-    <a-entity gltf-model="#animated-asset"
+    	<!-- 3DCGモデルの呼び出し、スケール、アニメーション設定 -->
+    	<a-entity gltf-model="#animated-asset"
 	    scale = "0.75 0.75 0.75"
 	    animation = "property: rotation; to: 0 360 0; dur: 10000; easing: linear; loop: true"
 	    animation-mixer
-    ></a-entity>
+    	></a-entity>
     </a-marker>
-    -->
 	    
-      <!-- 3DCGモデルを読み込む -->
-      <!-- <a-asset-item id="USA" src="./assets/USA_Burger.glb"></a-asset-item> -->
+    <!-- 3DCGモデルを読み込む -->
+    <a-asset-item id="USA" src="./assets/USA_Burger.glb"></a-asset-item>
 	    
-      <!-- マーカーの.pattファイルを読み込む -->
-      <!-- 
-      <a-marker type="pattern" url="./assets/USA_Burger_marker.patt">
-	  <!-- 3DCGモデルの呼び出し、スケール、アニメーション設定 -->
-          <a-entity gltf-model="#USA"
+    <!-- マーカーの.pattファイルを読み込む -->
+    <a-marker type="pattern" url="./assets/USA_Burger_marker.patt">
+	      
+    	<!-- 3DCGモデルの呼び出し、スケール、アニメーション設定 -->
+    	<a-entity gltf-model="#USA"
 	        scale = "3.5 3.5 3.5"
 		animation-mixer
-	        ></a-entity>
-      </a-marker>
-	     -->
+	></a-entity>
+    </a-marker>
 	    
       <!-- 3DCGモデルを読み込む -->
       <a-asset-item id="uniform-girl" src="./assets/uniform_girl.glb"></a-asset-item>
 	    
       <!-- マーカーの.pattファイルを読み込む -->
       <a-marker type="pattern" url="./assets/uniform_marker.patt">
-	  <!-- 画像の呼び出し、スケール、アニメーション設定 -->
-          <a-entity gltf-model="#uniform-girl"
-	        scale = "2 2 2"
-	        ></a-entity>
+	      
+	      <!-- 3DCGモデルの呼び出し、スケール、アニメーション設定 -->
+	      <a-entity gltf-model="#uniform-girl"
+		      scale = "2 2 2"
+		      animation-mixer
+	      ></a-entity>
       </a-marker>
 	    
     　<!-- カメラを追加 -->
