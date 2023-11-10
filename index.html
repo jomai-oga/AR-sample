@@ -88,9 +88,10 @@
     -->
 	    
       <!-- 3DCGモデルを読み込む -->
-      <a-asset-item id="USA" src="./assets/USA_Burger.glb"></a-asset-item>
+      <!-- <a-asset-item id="USA" src="./assets/USA_Burger.glb"></a-asset-item> -->
 	    
       <!-- マーカーの.pattファイルを読み込む -->
+      <!-- 
       <a-marker type="pattern" url="./assets/USA_Burger_marker.patt">
 	  <!-- 3DCGモデルの呼び出し、スケール、アニメーション設定 -->
           <a-entity gltf-model="#USA"
@@ -98,14 +99,15 @@
 		animation-mixer
 	        ></a-entity>
       </a-marker>
+	     -->
 	    
       <!-- 3DCGモデルを読み込む -->
-      <a-asset-item id="uni" src="./assets/uniform_girl.glb"></a-asset-item>
+      <a-asset-item id="uniform-girl" src="./assets/uniform_girl.glb"></a-asset-item>
 	    
       <!-- マーカーの.pattファイルを読み込む -->
       <a-marker type="pattern" url="./assets/uniform_marker.patt">
 	  <!-- 画像の呼び出し、スケール、アニメーション設定 -->
-          <a-entity gltf-model="#uni"
+          <a-entity gltf-model="#uniform-girl"
 	        scale = "2 2 2"
 	        ></a-entity>
       </a-marker>
