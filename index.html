@@ -99,21 +99,21 @@
 	></a-entity>
     </a-marker>
 	    
-      <!-- 3DCGモデルを読み込む -->
-      <a-asset-item id="uniform-girl" src="./assets/uniform_girl.glb"></a-asset-item>
+    <!-- 3DCGモデルを読み込む -->
+    <a-asset-item id="Uniform" src="./assets/uniform_girl.glb"></a-asset-item>
 	    
-      <!-- マーカーの.pattファイルを読み込む -->
-      <a-marker type="pattern" url="./assets/uniform_girl.patt">
+    <!-- マーカーの.pattファイルを読み込む -->
+    <a-marker type="pattern" url="./assets/uniform_girl.patt">
 	      
-	      <!-- 3DCGモデルの呼び出し、スケール、アニメーション設定 -->
-	      <a-entity gltf-model="#uniform-girl"
-		      scale = "4 4 4"
-		      rotation = "0 90 0"
-	      ></a-entity>
-      </a-marker>
+	<!-- 3DCGモデルの呼び出し、スケール、アニメーション設定 -->
+        <a-entity gltf-model="#Uniform"
+	      scale = "4 4 4"
+	      rotation = "0 90 0"
+        ></a-entity>
+    </a-marker>
 	    
-    　<!-- カメラを追加 -->
-      <a-entity camera></a-entity>
+    <!-- カメラを追加 -->
+    <a-entity camera></a-entity>
       
     </a-scene>
     <div class="ui">
