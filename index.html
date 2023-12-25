@@ -88,8 +88,16 @@
 	    
     <!-- 3DCGモデルを読み込む -->
     <a-asset-item id="USA" src="./assets/USA_Burger.glb"></a-asset-item>
-	    
-
+    
+    <!-- マーカーの.pattファイルを読み込む -->
+    <a-marker type="pattern" url="./assets/USA_Burger.patt">
+	      
+	<!-- 3DCGモデルの呼び出し、スケール、アニメーション設定 -->
+        <a-entity gltf-model="#USA"
+	      scale = "4 4 4"
+	      animation-mixer
+        ></a-entity>    
+    </a-marker>
 	    
     <!-- 3DCGモデルを読み込む -->
     <a-asset-item id="Uni" src="./assets/uniform_girl.glb"></a-asset-item>
