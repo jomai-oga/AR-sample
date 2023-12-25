@@ -100,15 +100,16 @@
     </a-marker>
 	    
     <!-- 3DCGモデルを読み込む -->
-    <a-asset-item id="Uniform" src="./assets/uniform_girl.glb"></a-asset-item>
+    <a-asset-item id="Uni" src="./assets/uniform_girl.glb"></a-asset-item>
 	    
     <!-- マーカーの.pattファイルを読み込む -->
     <a-marker type="pattern" url="./assets/uniform_girl.patt">
 	      
 	<!-- 3DCGモデルの呼び出し、スケール、アニメーション設定 -->
-        <a-entity gltf-model="#Uniform"
+        <a-entity gltf-model="#Uni"
 	      scale = "4 4 4"
-	      rotation = "0 90 0"
+	      rotation = "90 0 0"
+	      animation-mixer
         ></a-entity>
     </a-marker>
 	    
